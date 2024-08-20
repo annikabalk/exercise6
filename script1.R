@@ -56,10 +56,10 @@ median(odd)
 
 ### Question 4
 ricker <- function(nzero, r, k){
-    N_tminusone <- nzero(exp[r*(1-(nzero/k))])
+    N_tplusone <- nzero*(exp(r*(1-(nzero/k))))
   
   
-  return(N_tminusone)
+  return(N_tplusone)
 }
 
 
